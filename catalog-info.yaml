@@ -7,6 +7,7 @@ metadata:
     prometheus.io/port: '8080'
     prometheus.io/scrape: 'true'
     prometheus.io/alert: 'all'
+    prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
 spec:
   type: service
   owner: team-a
@@ -20,6 +21,7 @@ metadata:
     prometheus.io/url: 'http://localhost:9090'
     prometheus.io/rule: 'process_virtual_memory_bytes|job, process_open_fds|job'
     prometheus.io/alert: 'all'
+    prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
 spec:
   type: service
   lifecycle: production
