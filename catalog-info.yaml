@@ -17,8 +17,9 @@ kind: Component
 metadata:
   name: example-service
   annotations:
-    prometheus.io/rule: 'example-service'
     prometheus.io/url: 'http://localhost:9090'
+    prometheus.io/rule: 'process_virtual_memory_bytes|job, process_open_fds|job'
+    prometheus.io/alert: 'all'
 spec:
   type: service
   lifecycle: production
