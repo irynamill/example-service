@@ -10,8 +10,8 @@ metadata:
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
     prometheus.io/urls: |
       [
-        { "name": "dev", "url": "http://localhost:9090" },
-        { "name": "prod", "url": "http://localhost:9091" }
+        { "name": "dev", "url": "http://localhost:9091" },
+        { "name": "prod", "url": "http://localhost:9092" }
       ]
 spec:
   type: service
@@ -29,8 +29,8 @@ metadata:
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
     prometheus.io/urls: |
       [
-        { "name": "dev", "url": "http://localhost:9090" },
-        { "name": "prod", "url": "http://localhost:9091" }
+        { "name": "dev", "url": "http://localhost:9091" },
+        { "name": "prod", "url": "http://localhost:9092" }
       ]
 spec:
   type: service
