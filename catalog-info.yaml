@@ -8,7 +8,7 @@ metadata:
     prometheus.io/scrape: 'true'
     prometheus.io/alert: 'all'
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
-    mycorp.io/deployed-clusters: "micro-eh-pwe-aks,micro-eh-awe-aks"
+    mycorp.io/deployed-clusters: "cluster-a,cluster-b"
 spec:
   type: service
   owner: team-a
@@ -23,7 +23,7 @@ metadata:
     prometheus.io/rule: 'process_virtual_memory_bytes|job, process_open_fds|job'
     prometheus.io/alert: 'all'
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
-    mycorp.io/deployed-clusters: "micro-eh-pwe-aks,micro-eh-awe-aks"
+    mycorp.io/deployed-clusters: "cluster-a,cluster-b"
 spec:
   type: service
   lifecycle: production
