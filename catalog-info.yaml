@@ -8,11 +8,7 @@ metadata:
     prometheus.io/scrape: 'true'
     prometheus.io/alert: 'all'
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
-    prometheus.io/urls: |
-      [
-        { "name": "dev", "url": "http://localhost:9091" },
-        { "name": "prod", "url": "http://localhost:9092" }
-      ]
+    mycorp.io/deployed-clusters: "micro-eh-pwe-aks,micro-eh-awe-aks"
 spec:
   type: service
   owner: team-a
@@ -27,11 +23,7 @@ metadata:
     prometheus.io/rule: 'process_virtual_memory_bytes|job, process_open_fds|job'
     prometheus.io/alert: 'all'
     prometheus.io/targets: micro-eh-pwe-aks, micro-eh-awe-aks
-    prometheus.io/urls: |
-      [
-        { "name": "dev", "url": "http://localhost:9091" },
-        { "name": "prod", "url": "http://localhost:9092" }
-      ]
+    mycorp.io/deployed-clusters: "micro-eh-pwe-aks,micro-eh-awe-aks"
 spec:
   type: service
   lifecycle: production
